@@ -4,6 +4,8 @@
 version: "3"
 services:
   chrome:
+    labels:
+      shipyard.route: '/'
     image: selenium/node-chrome:4.0.0-rc-1-prerelease-20210823
     shm_size: 2gb
     depends_on:
